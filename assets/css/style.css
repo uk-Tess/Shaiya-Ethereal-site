@@ -1,0 +1,1566 @@
+/* ---------- BASE ----------- */
+*{
+	cursor: url("/assets/media/cursor/01.cur"), auto;
+	scroll-behavior: smooth;
+}
+
+a{
+	cursor: url("/assets/media/cursor/03.cur"), auto;
+}
+
+p{
+	cursor: url("/assets/media/cursor/06.cur"), auto;
+}
+
+body {
+	 cursor: url("/assets/media/cursor/01.cur"), auto;
+	 margin: 0;
+	 background-size: cover;
+	 background-color: white;
+	 min-height: 100%;
+	 display: flex;
+	 flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+	width: 100%;
+	color: #f5f5f5;
+	cursor: url("/assets/media/cursor/01.cur"), auto;
+}
+
+html{
+	cursor: url("/assets/media/cursor/01.cur"), auto;
+	scroll-behavior: smooth;
+	height: 100%;
+    min-height: 100%;
+}
+/* ---------- END BASE ----------- */
+
+
+/*           CONTENTS
+
+01 - Slider
+02 - Cookies
+03 - Menu
+04 - Menu-i
+05 - Footer
+06 - Form Contacts
+07 - Archor up
+08 - Posts
+09 - Server Status
+10 - Information Page
+11 - Download Page
+
+
+/* ---------- SLIDER 01----------- */
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.266));
+}
+
+.hero-slider {	
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.hero-slider .carousel-info {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-slider .carousel-info .inner {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	text-align: center;
+}
+
+.hero-slider .carousel-info .inner .title {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	color: white;
+	font-style: normal;
+	line-height: 2.5em;
+	letter-spacing: 1.2px;
+	margin-bottom: 5px;
+	font-size: 40px;
+}
+
+.hero-slider .carousel-info .inner .subtitle {
+	font-family: "Marcellus SC", serif;
+	line-height: 6.2em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: rgba(255, 255, 255, 0.945);
+	margin-bottom: 40px;	
+	font-size: 12px;
+}
+
+.hero-slider .carousel-info .inner .btn {
+	border: 2.5px solid #fff;
+	padding: 14px 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: "Poppins", serif;
+	font-size: 0.8rem;
+	letter-spacing: 2.5px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.hero-slider .carousel-info .inner .btn:hover {
+	font-family: "Poppins", serif;
+	font-size: 0.8rem;
+	letter-spacing: 2.5px;
+	font-weight: 700;
+	transition: 0.1s;
+	background: #f5f5f5;
+    color: #000000;
+	border-color: #000000;
+    border-radius: 7px;
+}
+
+.hero-slider .flickity-prev-next-button {
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	color: rgba(255, 255, 255, 0.247);
+	transition: 0.3s ease;
+}
+
+.hero-slider .flickity-prev-next-button:hover {
+	background: transparent;
+	transition: 0.3s ease;
+	color: rgb(255, 255, 255);
+}
+
+.hero-slider .flickity-prev-next-button .arrow-a {
+	fill: white;
+}
+
+.hero-slider .flickity-page-dots {
+	bottom: 30px;
+}
+
+.hero-slider .flickity-page-dots .dot {
+	width: 30px;
+	height: 4px;
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.5);
+	border: 0 solid white;
+	border-radius: 0;
+}
+
+.hero-slider .flickity-page-dots .dot.is-selected {
+	background: rgb(255, 249, 249);
+	border: 0 solid rgb(255, 249, 249);
+}
+/* ---------- END SLIDER ----------- */
+
+
+
+/* ---------- COOKIES 02----------- */
+.cookies-msg{
+    width: 80%;
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    display: none;
+}   
+
+.cookies-msg.ShowCookies{
+    display: block;
+}
+
+.cookies-msg .cookies{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.cookies-msg .cookies .cookies-btn{
+    margin-left: 10px;  
+}
+
+.cookies-msg .cookies .cookies-btn button{
+    background-color: #000;
+    color: #fff;
+    padding: 6px 22px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    transition: 0.2s;
+    border-radius: 100px;
+}
+
+.cookies-msg .cookies .cookies-btn button:hover{
+    transform: scale(0.9);
+}
+/* ---------- END COOKIES ----------- */
+
+
+
+/* ---------- MENU 03----------- */
+a:hover {
+	opacity: 0.7;
+}
+
+.container{
+	max-width: 1280px;
+	margin: auto;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	align-items: center;
+}
+
+.flex{
+	display: flex;
+	width: 1309px;
+	justify-content: space-between;	
+}
+
+header{
+	width: 100%;
+	height: 5%;
+	padding: 15px 4px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+header.scrollmenu{
+	background-color: #000000e7;
+	padding: 15px 4px;
+}
+
+header.scrollmenu .logo-menu{
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	padding: 21px;
+	font-size: 16px;
+}
+
+header.scrollmenu a{
+	color: #ffffff;
+	padding: 9px 4px;
+}	
+
+header.scrollpage{
+	background-color: #000000e7;
+	padding: 15px 4px;
+	transition-delay: 15ms	
+}
+
+header.scrollpage a{
+	color: #ffffff;
+	padding: 15px 2px;
+}	
+
+header ul{
+	list-style-type: none;
+}
+
+header a{
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	padding: 17px 0px 12px 19px;	
+	font-size: 15px;
+}
+
+header ul li{
+	display: inline-flex;
+}
+
+header ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	padding: 6px;
+}
+
+.banner{
+	height: 35vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* ---------- END MENU ----------- */
+
+
+
+/* ---------- MENU-I 04----------- */
+a:hover {
+	opacity: 0.7;
+}
+
+.container-i{
+	width: 100%;
+	background-color: #000000e7;
+	height: 62px;
+	top: 0;
+	left: 0;
+	position: fixed;
+	align-items: center;
+}
+
+
+.flex-i{
+	display: flex;
+	padding: 9px 10px 15px 2px;
+	width: 1309px;
+	justify-content: space-between;	
+}
+
+/* 
+.header-i{
+	width: 100%;
+	height: 7%;
+	padding: 0px 8px;
+	top: 0;
+	left: 0;
+	transition: 0.1s;
+}
+*/
+.header-i ul{
+	list-style-type: none;
+	display: flex;
+}
+
+.header-i a{
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	padding: 12px 0px 12px 19px;
+	font-size: 16px;
+}
+
+.header-i ul li{
+	display: inline-block;
+}
+
+.header-i ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	padding: 6px;
+}
+/* ---------- END MENU-I ----------- */
+
+
+
+/* ---------- FOOTER 05----------- */
+.footer-link{
+	text-decoration: none;
+}
+
+#footer_content{
+	background-color: #171717;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	padding: 10px 3.5rem;
+}
+
+#footer_contacts h1{
+	margin-bottom: 0.75rem;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+}
+
+#footer_contacts p{
+	font-family: "Montserrat", serif;
+	font-size: 14px;
+	margin-top: 1.5rem;
+}
+
+#footer_social_media{
+	display: flex;
+	gap: 2rem;
+	margin-top: 1.9rem;
+	font-size: 20px;
+}
+
+#footer_social_media .footer_link{
+	display: flex;
+	height: 1.8rem;
+	width: 1.8rem;
+	color: #ffffff;
+	border-radius: 50%;
+	padding: 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+	text-decoration: none;
+}
+
+#Discord{
+	background-color: rgb(88, 101, 242);
+	font-size: 17px;
+	font-size: 18.5px;
+	border-color:  rgb(88, 101, 242);
+	color:  rgb(88, 101, 242);
+	box-shadow: 0 0 40px 40px  rgb(88, 101, 242) inset, 0 0 0 0  rgb(88, 101, 242);
+	transition: all 150ms ease-in-out;
+}
+
+#Discord:hover{
+	box-shadow: 0 0 10px 0 rgb(88, 101, 242), 0 0 10px 4px rgb(88, 101, 242);
+}
+
+#Telegram{
+	background-color: #0088cc;
+	font-size: 32.2px;
+	border-color: blue;
+	color: #0088cc;
+	box-shadow: 0 0 40px 40px rgb(0, 136, 204) inset, 0 0 0 0 rgb(0, 136, 204);
+	transition: all 150ms ease-in-out;
+}
+
+#Telegram:hover{	
+	  box-shadow: 0 0 10px 0 rgb(0, 136, 204), 0 0 10px 4px rgb(0, 136, 204);
+}
+
+#Youtube{
+	background-color: #c4302b;
+	font-size: 17px;
+	border-color: #c4302b;
+	color: #c4302b;
+	box-shadow: 0 0 40px 40px rgb(196, 48, 43) inset, 0 0 0 0 rgb(196, 48, 43);
+	transition: all 150ms ease-in-out;
+}
+
+#Youtube:hover{
+	box-shadow: 0 0 10px 0 rgb(196, 48, 43), 0 0 10px 4px rgb(196, 48, 43);
+}
+
+#footer_social_media .footer-link:hover{
+	opacity: 0.8;
+}
+
+#footer_social_media .footer-link i{
+	font-size: 1.25rem;
+}
+
+.footer-list{
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+
+.footer-list .f-text{
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+.ESRB{
+	padding: 10px 1px;
+	margin-top: 10%;
+	display: flex;
+}
+
+.footer-list .footer-link{
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #f5f5f5;
+	transition: all 0.4s;	
+}
+
+.footer-list .footer-link:hover{
+	color: rgba(255, 255, 255, 0.247);
+}
+
+#footer_sub{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	font-size: 12px;
+	font-family: "Poppins", sans-serif;
+}
+
+#footer_sub p{
+	font-size: 12px;
+	font-family: "Poppins", sans-serif;
+	color: #f5f5f5;
+}
+
+#input_group{
+	display: flex;
+	align-items: center;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+#input_group input{
+	all: unset;
+	padding: 0.75rem;
+	width: 100%;
+}
+
+#input_group button{
+	background-color: #f5f5f5;
+	border: none;
+	color: #f5f5f5;
+	padding: 0px 1.25rem;
+	font-size: 1.125rem;
+	height: 100%;
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#input_group button:hover{
+	opacity: 0.8;
+}
+
+#footer_copyright{
+	font-family: "Montserrat", serif;
+	display: flex;
+	color: #ffffff7a;
+	justify-content: center;
+	background-color: #0e0c0c;
+	font-size: 13px;
+	padding: 15px;
+}
+
+@media screen and(max-width: 768px) {
+	#footer_content {
+		grid-template-columns: repeat(2,1fr);
+		gap: 2rem;
+	}	
+}
+
+@media screen and(max-width: 426px) {
+	#footer_content {
+		grid-template-columns: repeat(1,1fr);
+		padding: 3rem 2rem;
+	}	
+}
+/* ---------- END FOOTER ----------- */
+
+
+
+/* ---------- FORM CONTACTS 06----------- */
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    color: #f5f5f5;
+    font-size: 13px;
+    margin-bottom: 1px;
+}
+
+form input{
+	width: 91%;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+	border-radius: 3px;
+}
+
+form input:focus{
+    border-radius: 8px;
+	transition: all 0.1s;
+}
+
+form textarea{
+	width: 93%;
+    padding: 2px;
+    outline: none;
+    border: 0;
+    font-size: 13px;
+    margin-bottom: 9px;
+    transition: all 0.5s;
+	border-radius: 2px;
+}
+
+form textarea:focus{
+    border-radius: 8px;
+	transition: all 0.1s;
+}
+
+form button{
+	width: 94%;
+	text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+	font-family: "Marcellus SC", serif;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    margin-bottom: 1px;
+	border-radius: 3px;
+}
+
+form button:hover{
+	transition: 0.3s ease-in;
+	background: #f5f5f5;
+    color: #101026;
+    border-radius: 7px;
+}
+/* ---------- END FORM CONTACTS ----------- */
+
+
+
+/* ---------- ARCHOR UP 07----------- */
+.archor{
+	display: flex;
+	justify-content: center;	
+}
+
+.material-symbols-outlined{
+	color: #2e0101;
+	font-size: 30px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	margin-bottom: 15px;
+}
+
+.material-symbols-outlined:hover{
+	transition: .2s;
+	color: #C80202;
+	transform: scale(1.3);
+}
+/* ---------- END ARCHOR UP ----------- */
+
+
+
+/* ---------- POSTS 08----------- */
+.container-Latest-News .title-post-initial{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 67vh;
+}
+
+.container-Latest-News .title-post-initial h1{
+	display: flex;
+	margin-top: 6%;
+	margin-left: 12%;
+	font-family: "Marcellus SC", serif;
+	font-size: 24px;
+	letter-spacing: 3.5px;
+}
+
+.Latest-News{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 3%;
+	margin-left: 10%;
+}
+
+.Latest-News .div-post .title-post-news .post-a-title{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News .div-post .title-post-news .post-a-title:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News .div-post .title-post-news .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.div-date-post{
+	display: flex;
+	font-size: 12px;
+	color: #000;
+	font-family: "Poppins", sans-serif;
+}
+
+.resume-post {
+	max-width: 53%;
+	font-size: 14px;
+	color: #000000;
+	font-family: "poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.read-more{
+	cursor: pointer;
+	font-size: 12px;
+	color: #000000;
+	font-family: "poppins", sans-serif;
+	font-weight: 500;
+}
+
+.read-more:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.post-video-news{
+	margin-bottom: 10px;
+}
+/* ---------- END POSTS ----------- */
+
+
+
+/* ---------- SERVER STATUS 09 ----------- */
+.server{
+	float: right;
+	display: flex;
+	margin-top: -288vh;
+	margin-right: 12%;
+	border: none;
+	justify-content: space-between;
+}
+
+.container-server-status .server h1{
+	float: right;
+	display: flex;
+	height: 10vh;
+	font-family: "Marcellus SC", serif;
+	font-size: 24px;
+	letter-spacing: 3.5px;
+}
+
+.Server-info{
+	float: right;
+	margin-left: 10%;
+	margin-top: -274vh;
+	margin-right: 10%;
+	line-height: 1px;
+}
+
+.Server-info .info .Info-Title .server-title-info{
+	font-size: 15px;
+	letter-spacing: 1.1px;
+	margin-right: 5px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+	cursor: not-allowed;
+}
+	
+.Server-status{
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	left: 70%;
+	color: #C80202;
+	cursor: not-allowed;
+}
+
+#server-status{
+	bottom: -29%;
+	left: 72%;
+	position: absolute;
+	color: #000000;
+	font-size: 20px;
+	cursor: not-allowed;
+}
+
+.server-info-li{
+	float: right;
+	margin-left: 10%;
+	margin-top: -280vh;
+	margin-right: 10%;
+}
+
+.ul-server ul{
+	word-spacing: 10px;
+	letter-spacing: 1.1px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.resp{
+	color:#C80202
+}
+/* ---------- END SERVER STATUS ----------- */
+
+
+
+/* ---------- INFORMATION PAGE 10 ----------- */
+.container-information {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20vh;
+	align-items: center;
+}
+
+.title-post-information{
+	display: flex;
+	font-family: "Marcellus SC", serif;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin-bottom: 5%;
+}
+
+.Latest-News-1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -35px;
+	margin-left: 10%;
+}
+
+.Latest-News-1 .div-post-1 .title-post-news-1 .post-a-title-1{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-1 .div-post-1 .title-post-news-1 .post-a-title-1:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-1 .div-post-1 .title-post-news-1 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -50px;
+	margin-left: 43%;
+}
+
+.Latest-News-2 .div-post-2 .title-post-news-2 .post-a-title-2{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-2 .div-post-2 .title-post-news-2 .post-a-title-2:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-2 .div-post-2 .title-post-news-2 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -50px;
+	margin-left: 73%;
+}
+
+.Latest-News-3 .div-post-3 .title-post-news-3 .post-a-title-3{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-3 .div-post-3 .title-post-news-3 .post-a-title-3:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-3 .div-post-3 .title-post-news-3 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-4{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 3%;
+	margin-left: 10%;
+}
+
+.Latest-News-4 .div-post-4 .title-post-news-4 .post-a-title-4{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-4 .div-post-4 .title-post-news-4 .post-a-title-4:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-4 .div-post-4 .title-post-news-4 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-5{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -46px;
+	margin-left: 43%;
+}
+
+.Latest-News-5 .div-post-5 .title-post-news-5 .post-a-title-5{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-5 .div-post-5 .title-post-news-5 .post-a-title-5:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-5 .div-post-5 .title-post-news-5 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-6{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -49px;
+	margin-left: 73%;
+	
+}
+
+.Latest-News-6 .div-post-6 .title-post-news-6 .post-a-title-6{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-6 .div-post-6 .title-post-news-6 .post-a-title-6:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-6 .div-post-6 .title-post-news-6 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+.Latest-News-7{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-left: 10%;
+}
+
+.Latest-News-7 .div-post-7 .title-post-news-7 .post-a-title-7{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	padding-left: 30px;
+	letter-spacing: 1.2px;
+	color: #0e0c0c;
+	font-family: "Poppins", sans-serif;
+}
+
+.Latest-News-7 .div-post-7 .title-post-news-7 .post-a-title-7:hover{
+	color: #C80202;
+	transition: 0.1s ease-in;
+}
+
+.Latest-News-7 .div-post-7 .title-post-news-7 .material-symbols-outlined{
+	display: flex;
+	font-size: 22px;
+	position: absolute;
+	padding: 4px 1px;	
+}
+
+#sub-info{
+	display: flex;
+	justify-content: center;
+}
+
+#sub-info p{
+	font-size: 14px;
+	font-family: "Poppins", sans-serif;
+	margin: 0 0 80px 80px;
+}
+
+#see-more-span-support{
+	font-family: "Poppins", sans-serif;
+	color: #C80202;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* update notes session */
+.info-info{
+	display: flex;
+	font-family: "Marcellus SC", serif;
+	justify-content: center;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin-top: 8%;
+}
+
+.patch-note-here{
+	display: flex;
+	justify-content: center;
+	font-family: "Marcellus SC", serif;
+	font-size: 22px;
+	margin-top: 5%;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: #f5f5f5;
+	font-weight: 400;
+}
+
+.parallax {
+	background-attachment: fixed; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120vh;
+	margin: none;
+}
+
+.patch-notes-text{
+	justify-content: center;
+	text-align: center;
+	color: #f5f5f5;
+	font-size: 14px;
+	letter-spacing: 1.0px;
+	font-family: "poppins", serif;
+	margin: -35px 0px 0px 0px;
+	font-weight: 500;
+}
+
+.cards-01 .cards-game{
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+	height: 450px;	
+	max-width: 350px;
+	margin-top: 100px;
+	margin-left: 3%;
+	margin-right: 70%;
+	border-radius: 10px;
+	border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #7e0303c2;
+}
+
+#game{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.notes-game{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.cards-02 {
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+    height: 450px;
+	max-width: 350px;
+	margin-top: -452px;
+	justify-items: center;
+	margin-left: 36.5%;
+	border-radius: 10px;
+	border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #7e0303c2;
+}
+
+#systems{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.notes-systems{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.cards-03 .cards-game-settings{
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+    height: 450px;
+	max-width: 350px;
+	margin-top: -452px;
+	justify-items: center;
+	margin-left: 70%;
+	border-radius: 10px;
+	border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #7e0303c2;
+}
+
+#game-settings{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.notes-game-settings{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+/* BTN: List of items session */
+.next-session{
+	display: flex;
+	justify-content: center;
+	margin: 0 0 0 0;
+}
+
+.next-session .Next_session{
+	background-color: #0000008e;
+	border-radius: 50%;
+	margin-top: 1%;
+	width: 40px;
+	height: 40px;
+	line-height: 10px;
+}
+
+.next-session .Next_session:hover{
+	background-color: #000000;
+	box-shadow: 0 0 2px 0 rgb(255, 255, 255), 0 0 10px 4px rgb(0, 0, 0);
+	transition: 0.1s;
+	transform: scale(1.1);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 10px;
+}
+
+.prev-session{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;	
+	margin-top: 1%;
+	margin-left: 10px;
+}
+
+.prev-session .prev_session{
+	background-color: #0000008e;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 10px;
+}
+
+.prev-session .prev_session:hover{
+	background-color: #000000;
+	box-shadow: 0 0 2px 0 rgb(255, 255, 255), 0 0 10px 4px rgb(0, 0, 0);
+	transition: 0.1s;
+	transform: scale(1.1);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 10px;
+}
+
+/* List of items session */
+.list-of-items-here{
+	display: flex;
+	justify-content: center;
+	font-family: "Marcellus SC", serif;
+	font-size: 22px;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: #f5f5f5;
+	font-weight: 400;
+}
+
+.parallax-items {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120vh;
+	margin: none;
+}
+
+.list-of-items-text{
+	justify-content: center;
+	text-align: center;
+	color: #f5f5f5;
+	font-size: 14px;
+	letter-spacing: 1.0px;
+	font-family: "poppins", serif;
+	margin: -35px 0px 0px 0px;
+	font-weight: 500;
+}
+
+.cards-01 .cards-game{
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+	height: 450px;	
+	max-width: 350px;
+	margin-top: 100px;
+	margin-left: 3%;
+	margin-right: 70%;
+	border-radius: 10px;
+	border-top-width: 3px;
+    border-top-style: solid;
+	border-top-color: #fffffffd;
+}
+
+#list-of-items-Cosmetics{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.list-of-items-notes{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.cards-02 {
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+    height: 450px;
+	max-width: 350px;
+	margin-top: -452px;
+	justify-items: center;
+	margin-left: 36.5%;
+	border-radius: 10px;
+	border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #fffffffd;
+}
+
+#list-of-items-gears-and-weapons{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.list-of-items-gears-and-weapons-notes{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.cards-03 .cards-game-settings{
+	background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+	box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);	
+    height: 450px;
+	max-width: 350px;
+	margin-top: -452px;
+	justify-items: center;
+	margin-left: 70%;
+	border-radius: 10px;
+	border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #fffffffd;
+}
+
+#list-of-items-Lapis-and-others{
+	font-family: "poppins", serif;	
+	font-size: 18px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+.list-of-items-Lapis-and-others-notes{
+	font-family: "poppins", serif;	
+	font-size: 14px;
+	color:#f5f5f5;
+	text-align: center;
+}
+
+/* Season System session */
+.Title-season-here{
+	display: flex;
+	justify-content: center;
+	font-family: "Marcellus SC", serif;
+	font-size: 22px;
+	margin-top: 2%;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+}
+
+.more-seasons-contents{
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	letter-spacing: 1.0px;
+	font-family: "poppins", serif;
+	line-height: 20px;
+	margin: 30px 30px ;
+	font-weight: 600;
+}
+
+.topic-etc{
+	color: #ff0000;
+	cursor: pointer;
+}
+
+.more-seasons-contents{
+	font-family: "poppins", serif;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+}
+
+.more-seasons-contents-sub{
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.9px;
+	font-family: "poppins", serif;
+	line-height: 20px;
+	margin: 30px 30px ;
+	font-weight: 500;
+}
+
+.more-seasons-market{
+	font-family: "poppins", serif;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+}
+
+.more-seasons-market-sub{
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.9px;
+	font-family: "poppins", serif;
+	line-height: 20px;
+	margin: 30px 30px ;
+	font-weight: 500;
+}
+
+.more-seasons-reset{
+	font-family: "poppins", serif;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+}
+
+.more-seasons-reset-sub{
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.9px;
+	font-family: "poppins", serif;
+	line-height: 20px;
+	margin: 30px 30px ;
+	font-weight: 500;
+}
+
+/* BTN: List of items session */
+.session-season{	
+	text-align: center;
+	letter-spacing: 30px;
+	text-decoration: none;
+	list-style-type: none;
+	text-transform: none;	
+	margin-top: -15%;
+	margin-bottom: 30px;
+}
+/* ---------- END INFORMATION PAGE ----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- DOWNLOAD PAGE 11 ----------- */
+.Title-Download{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 15vh;
+	margin-bottom: -1%;
+}
+
+.Title-Download h1{
+	display: flex;
+	font-family: "Marcellus SC", serif;
+	font-size: 24px;
+	letter-spacing: 3.5px;
+	margin-bottom: 5%;
+}
+
+.img-download .img-mega .mega{
+	margin-left: 38%;
+	letter-spacing: 95px;
+	text-decoration: none;
+}
+
+.sub-title-download .download-client{
+	color: #000000;
+	margin-top: 1%;
+	margin-left: 40%;
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;		
+}
+
+.framework{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+	margin-bottom: -1%;
+}
+
+.framework h1{
+	display: flex;
+	font-family: "Marcellus SC", serif;
+	font-size: 24px;
+	letter-spacing: 3.5px;
+	margin-bottom: 5%;
+}
+
+.net-framework .img-net .dx10-link{
+	margin-left: 23%;
+	letter-spacing: 90px;
+	text-decoration: none;
+}
+
+.context{
+	display: flex;
+	margin-left: 24%;
+}
+
+.context #dx10{
+	color: #000000;
+	margin-top: 1%;
+	margin-left: 5%;
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;	
+}
+
+.context #runtime{
+	color: #000000;
+	margin-top: 1%;
+	margin-left: 29%;
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;	
+}
+
+.subtitle-netframework{
+	display: flex;
+	color: #000000;
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+}
+/* ---------- END DOWNLOAD PAGE ----------- */
+
+
+
